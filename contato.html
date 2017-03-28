@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Ana Peck Farmaestetica - Contato</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--Responsive tag-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="_css/style.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-purple w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Início</a>
+    <a href="artigos.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Artigos</a>
+    <a href="contato.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contato</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Início</a>
+    <a href="artigos.html" class="w3-bar-item w3-button w3-padding-large">Artigos</a>
+    <a href="contato.html" class="w3-bar-item w3-button w3-padding-large">Contato</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header id="cabecalho" class="w3-container w3-purple w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Ana Peck</h1>
+  <p class="w3-xlarge">FARMAESTETICA</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container w3-justify">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Contato</h1>
+      <h5 class="w3-padding-32">Para orçamentos ou informações:</h5>
+
+      <p class="w3-text-grey"></p>
+
+      <form method="post" id="fContato" action="mailto:example@example.com">
+        <fieldset id="usuario">
+                <p>
+                <label for="cNome"></label>
+                    <input type="text" name="tNome" id="cNome" size="50" maxlength="50" placeholder="Preencha seu nome"></p>
+                <p>
+                <label for="cMail"></label>
+                    <input type="email" name="tMail" id="cMail" size="50" maxlength="50" placeholder="E aqui seu email"></p>
+                <p>
+                <label for="cMsg"></label>
+                    <textarea name="tMsg" id="cMsg" cols="48" rows="5" placeholder="Mensagem"></textarea></p>
+                <input type="image" name="tEnviar" src="_imagens/botao_enviar.png">
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="w3-third w3-right">
+      <h4 class="w3-padding-32">Travessa do Rafael - 117 | Centro | Taubaté - SP<br>
+        <a href="mailto:anapeckfarmaceutica@gmail.com">anapeckfarmaceutica@gmail.com</a></h4>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-container w3-justify">
+  <div class="w3-content">
+    <div class="w3-twothird">
+        <h5>Como chegar?</h5>
+      <p class="w3-text-grey"></p>
+    </div>
+
+    <div id="mapouter"><div id="gmap_canvas"><iframe width="600" height="500" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=Travessa do Rafael - 117 Centro, Taubaté, SP, BR, &t=&z=14&ie=UTF8&iwloc=&output=embed" marginwidth="0"></iframe><a href="http://www.embedgooglemap.net">loading ...</a></div><style>#gmap_canvas{height:500px;width:600px;}#mapouter{overflow:hidden;height:500px;width:600px;}</style></div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center">  
+  <div class="w3-xlarge w3-padding-32">
+   <a href="https://pt-br.facebook.com/anapeckfarmaestetica/" title="Facebook" target="_blank" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+ </div>
+ <p>Design by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3schools</a></p>
+ <p>&copy; Copyright 2017 - Ana Peck</p>
+ <p>Proibida a cópia total ou parcial</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
